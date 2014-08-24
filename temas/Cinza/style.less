@@ -1,0 +1,65 @@
+// Tema Cinza para o Página de Destaque
+
+// fonts
+@main-font: "open_sansregular", Arial, Helvetica, sans-serif;
+@title-font: "open_sansregular", Arial, Helvetica, sans-serif;
+@font-size: 100%;
+
+// Basic Colors
+@main-bg: #fff;
+@main-color: #111111;
+@header: #f2f2f2;
+@header2: #e2e2e2;
+@nav: #d5d6d8;
+@footer: #0042b2;
+
+// text styles
+@main-text: #111111;
+@title-color: darken(@main-color, 20%);
+@header-text: #2d66cf;
+@header-link: @header-text;
+@text-shadow: #fff;
+
+// link styles
+@main-link: darken(@main-color, 10%);
+@secondary-link: darken(@main-color, 20%);
+@nav-link: contrast(@nav, #000, #fff);
+
+// colunas
+@main-width: 960px;
+@max-width: 100%;
+@coluna1: 20%;
+@coluna2: 30%;
+
+// Aditional styles
+@border: darken(@main-bg, 15%) 1px solid;
+.gradient {
+	background: -webkit-linear-gradient(@header, @header2); /* For Safari */
+	background: -o-linear-gradient(@header, @header2); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(@header, @header2); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(@header, @header2); /* Standard syntax (must be last) */
+}
+.gradient-nav {
+	background: -webkit-linear-gradient(@nav, darken(@nav, 10%)); /* For Safari */
+	background: -o-linear-gradient(@nav, darken(@nav, 10%)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(@nav, darken(@nav, 10%)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(@nav, darken(@nav, 10%)); /* Standard syntax (must be last) */
+}
+.wrapper-size {
+	margin: 0 auto;
+	width: @main-width;
+	max-width: @max-width;
+}
+.shadow {
+	box-shadow: 0 2px 4px #ccc;
+}
+.text-shadow {
+	text-shadow: 0px 2px 3px @text-shadow;
+}
+
+// Basic styles
+@import url("../../base/basic.less");
+@import url("../../base/responsive.less");
+@import url("../../base/print.less");
+
+// custom styles, if needed
