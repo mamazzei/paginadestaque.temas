@@ -100,7 +100,6 @@ nav li {
   padding-right: 10px;
   .nav-border;
 }
-
 #main {
   .wrapper-size;
   background: @main-bg;
@@ -108,6 +107,8 @@ nav li {
 
 .ministerios {
   background: @header;
+  margin: 0 !important;
+  max-width: 100% !important;
 }
 .ministerios ul {
   margin: 0 auto;
@@ -115,13 +116,14 @@ nav li {
   width: @max-width;
 }
 .ministerios li {
-  width: 29%;
+  width: 21%;
   float: left;
   margin: 2%;
   text-align: center;
+  color: @header-link;
 }
-.ministerios a {
-  color: @footer;
+.ministerios li:nth-child(4n+5) {
+  clear: both;
 }
 .ministerios a span:last-child {
   display: block;

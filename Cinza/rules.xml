@@ -42,7 +42,7 @@
         <copy attributes="class" css:content="#portal-column-content" css:theme="#portal-column-content" />
         <replace css:content="#portal-column-content > #viewlet-below-content" css:theme="#portal-column-content > #viewlet-below-content" />
         <replace css:content="#portal-column-two" css:theme="#portal-column-two" />
-        <replace css:content=".footer_links" css:theme=".ministerios ul"  />
+        <replace css:content=".footer_links li" css:theme=".ministerios ul li"  />
 
         <!-- Portlets -->
         <strip css:content=".portletNavigationTree .portletHeader a.tile" />
