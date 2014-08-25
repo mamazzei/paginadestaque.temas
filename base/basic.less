@@ -1,87 +1,44 @@
 /***********************************
 Atenção, este arquivo afeta todos os
-temas do portal, utilize com cudado.
+temas do portal, utilize com cuidado.
 Para customizações específicas use o
 arquivo style.less de cada tema.
 ***********************************/
 
 body {
   background-color: @main-bg;
-  color: @main-color;
-  font-size: @font-size;
-  font-family: @main-font;
+  color: @main-text;
 }
 #wrapper {
-  margin: 0 auto;
-  width: 100%;
+  border-top: 2px solid #dfdfdf;
 }
 #header {
   color: @header-text;
   padding: 10px 0 0 0;
-  margin-bottom: 30px;
   .gradient
 }
-#header > div {
-  position: relative;
-  margin: 0 auto;
-  max-width: @main-width;
-  width: @max-width;
-}
 #accessibility {
-  display: block !important;
-  float: left;
-  width: 50%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.6em;
-}
-#accessibility li {
-  margin-right: 10px;
+  font-size: 0.78em;
 }
 #accessibility a span {
-  background: @header-text;
+  background: lighten(@header-text, 10%);
   color: @header;
-  padding: 0 3px;
 }
 #portal-siteactions {
   border-bottom: 1px dotted @header-text;
-  clear: none;
-  display: block;
-  float: right;
-  font-size: 0.58em;
-  padding-bottom: 2px;
-  text-transform: uppercase;
-}
-#portal-siteactions li {
-  margin-right: 10px;
-}
-#portal-siteactions li:last-child {
-  margin-right: 0;
-}
-#portal-logo {
-  margin: 1em 0;
-}
-#portal-title {
-  margin: 0;
-  color: @header-link;
-  font-size: 2.5em;
-  font-family: "open_sansextrabold", Arial, Helvetica, sans-serif;
-  line-height: 1em;
-}
-#portal-title-1 {
-  font-size: 0.8em;
-  text-transform: uppercase;
 }
 #header h1,
 #header a {
   color: @header-link;
 }
-
+#portal-title {
+  margin-bottom: 25px;
+}
 nav {
   .gradient-nav
 }
 
 nav ul {
-  font-size: 0.7em;
   line-height: 20px;
   padding: 5px 0;
   .wrapper-size;
@@ -95,11 +52,6 @@ nav li {
 #main {
   .wrapper-size;
   background: @main-bg;
-}
-
-#footer {
-  background: @footer;
-  padding: 25px 0;
 }
 
 .ministerios {
@@ -123,15 +75,6 @@ nav li {
   display: block;
   font-weight: bold;
 }
-
-.footer-logos {
-  margin: 0 auto;
-  max-width: @main-width;
-  width: @max-width;
-}
-
-#extra-footer {
-  font-size: 0.7em;
-  padding: 15px 0;
-  .wrapper-size
+#footer .footer-logos {
+  background: @footer;
 }
