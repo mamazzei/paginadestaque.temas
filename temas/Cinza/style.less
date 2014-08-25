@@ -7,20 +7,18 @@
 
 // Header
 @header: @main-color;
-@header2: #e2e2e2;
+@header2: darken(@header, 10%);
 @header-text: #2d66cf;
 @header-link: @header-text;
+.header-border {border-top: 2px solid #dfdfdf;}
 
 // Navegacao
 @nav: #d5d6d8;
+@nav-link: @header-text;
+.nav-border {border-right:1px solid #98999b;}
 
 // Footer
 @footer: #0042b2;
-
-// link styles
-@main-link: darken(@main-color, 10%);
-@secondary-link: darken(@main-color, 20%);
-@nav-link: contrast(@nav, #000, #fff);
 
 // colunas
 @main-width: 960px;
@@ -46,7 +44,6 @@
 	width: @main-width;
 	max-width: @max-width;
 }
-
 
 // Basic styles
 @import url("../../base/basic.less");

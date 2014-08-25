@@ -5,20 +5,25 @@ Para customizações específicas use o
 arquivo style.less de cada tema.
 ***********************************/
 
-.menuTrigger {display: none;}
+@media only screen and (min-width : 320px) and (max-width : 768px) {
 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
+    .menuTrigger {
+        background: #dbdce1 url("/img/bg-menu-mobile.png") top right no-repeat;
+    }
+
+    .portlet-static-centrais-de-conteudos .portletHeader,
+    .portletNavigationTree .portletHeader {
+        background: #edeff1 url("/img/portlet-header.gif") no-repeat 96% center;
+    }
+
+    .portletNavigationTree .portletHeader.ativo {
+        background: url("/img/portlet-header-expanded.gif") no-repeat 96% center;
+    }
 
 }
- 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-    #main-content, #column-one, #column-two {display: block; width: 100%; padding: 0;}
-}
- 
-/* Landscape phones and down */
-@media (max-width: 480px) {
 
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  #header #portal-searchbox .searchButton {
+    background: url("/img/search-button-30px.png") no-repeat;
+  }
 }
-
